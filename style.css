@@ -1,0 +1,372 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner{
+    max-width: 1000px;
+    margin: auto;
+
+    /* font-family: 'Handlee', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif; */    
+}
+
+.row{
+    width: 100%;
+}
+
+
+.row::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+[class*="col-"]{
+    width:100% ;
+}
+/* header start here */
+header{
+    background-color: #24a19c;
+    text-align: center;
+    padding: 0% 1%;
+}
+
+.logo-div .logo{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: auto;
+}
+nav ul li{
+    display: block;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: 70px;
+    line-height: 80px;
+
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family:'Roboto', sans-serif;
+    transition: .4s;
+}
+nav ul li a:hover{
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* header end here */
+
+
+/* banner start here  */
+
+#banner-section{
+background-image:url(images/banner.jpg) ;
+background-position: center;
+background-attachment: scroll ;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.banner-content{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.banner-content h1{
+    width: 100%;
+    font-size:45px ;
+    margin: 15px auto;
+    background-color: rgba(177, 177, 56, 0.728);
+    border-radius: 4px;
+    padding:10px ;
+    font-family: 'Handlee', cursive;
+
+}
+
+.banner-content p{
+    background-color: rgba(0,128,0);
+    width: 300px;
+    margin: 15px auto;
+    border-radius: 4px;
+    color: whitesmoke;
+    padding:10px ;
+    font-size: 24px;
+
+}
+
+.btn{
+    width: 160px;
+    padding: 10px;
+    border: none;
+    font-size: 20.8px;
+    border-radius: 6px;
+    background-color: rgba(0,128,0) ;
+    transition: .4s;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+/* banner end here */
+
+
+/* about start here  */
+
+#about{
+
+    padding: 1%;
+}
+
+.about-us-content{
+    text-align: center;
+
+}
+
+.about-us-content h3{
+    font-size: 32px;
+    margin-bottom:10px  ;
+    font-weight: bolder;    
+}
+
+.about-us-content p{
+    font-size:12.8px;
+    margin: 10px;
+    text-align: justify;
+}
+/* about end here  */
+
+/* food menu start here  */
+#menu-section{
+    padding: 1%;    
+}
+.card-body{
+    text-align: center;
+}
+.card-body img{
+    max-width:100%;
+    height: auto;
+    display: block;
+}
+.item-desc{
+    background-color: rgb(164, 146, 146);
+}
+.item-name{
+    background-color: rgb(6, 71, 6);
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.item-desc > p {
+    font-size: 19.2px;
+    padding: 10px;
+    font-weight: bold;
+}
+.card{
+    transition: 0.5s;
+}
+.card:hover{
+    transform:scale(1.1) ;
+}
+/* food menu end here  */
+
+/* contact start here  */
+
+#contact{
+    padding: 1%;
+    background-color:#595b83 ;
+}
+
+.contact-details{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
+.map{
+    width: 100%;
+    height: 250px; 
+}
+.contact-details P, address{
+    font-size: 12.2px;
+}
+/* contact end here  */
+
+
+/* fotter start here  */
+footer{
+    padding: 1%;
+    color: white;
+    background-color: #060930;
+}
+footer p{
+    line-height: 32px;
+    font-size: 12.2px;
+    text-align: center;
+}
+.social-menu{
+    text-align: center;    
+}
+.social-menu .icon-style{
+    color: white;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: .4s;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.icon-style:hover{
+    background-color: gray;
+    transform: scale(1.2);
+}
+
+
+/* fotter end here  */
+
+@media (min-width: 576px) {
+    /* For tablets or large phone */
+    
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+}
+
+
+
+@media (min-width: 768px) {
+    /* for medium */
+    
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+}
+
+
+
+@media (min-width: 992px) {
+    /* For Desctop*/
+    .logo-div{
+        text-align:left ;
+    }
+    nav ul{
+        text-align: right;
+
+    }
+    nav ul li{
+        display: inline-block;
+    }
+    nav ul li a{
+        display: inline-block;
+    }
+    nav ul li a:hover{
+        background-color: transparent;
+        transform: scale(1.2);
+        text-decoration: underline;
+        border-radius:0;
+    }
+
+    /* banner start here  */
+    #banner-section{
+        position: relative;
+        height: 100vh;
+
+    }
+    .banner-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .banner-content h1{
+        width:700px;
+        font-size: 56px;
+
+    }
+    .banner-content p{
+        width:500px;
+        font-size: 32px;
+
+    }
+
+    /* banner end here */
+
+    /* fotter start here */
+
+    footer p{
+        text-align: left;
+    }
+
+    .social-menu{
+        text-align: right;
+    }
+
+    /* fotter end here */
+
+
+
+
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+  }
+
+
+
+
